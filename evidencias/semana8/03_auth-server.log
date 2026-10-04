@@ -1,0 +1,26 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::               (v3.5.16)
+
+2026-10-04T19:30:08.124-03:00  INFO 261686 --- [auth-server] [           main] c.d.bancoxyz.auth.AuthServerApplication  : Starting AuthServerApplication v1.0.0-SNAPSHOT using Java 17.0.20.1 with PID 261686 (/home/mcabri/Escritorio/PBY2203/Exp3_S8/banco-xyz-bff/auth-server/target/auth-server-1.0.0-SNAPSHOT.jar started by mcabri in /home/mcabri/Escritorio/PBY2203/Exp3_S8/banco-xyz-bff)
+2026-10-04T19:30:08.193-03:00  INFO 261686 --- [auth-server] [           main] c.d.bancoxyz.auth.AuthServerApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-10-04T19:30:25.639-03:00  INFO 261686 --- [auth-server] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9000 (http)
+2026-10-04T19:30:25.796-03:00  INFO 261686 --- [auth-server] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-10-04T19:30:25.806-03:00  INFO 261686 --- [auth-server] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-10-04T19:30:26.194-03:00  INFO 261686 --- [auth-server] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-10-04T19:30:26.208-03:00  INFO 261686 --- [auth-server] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 17466 ms
+2026-10-04T19:30:29.267-03:00  INFO 261686 --- [auth-server] [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2026-10-04T19:30:41.111-03:00  INFO 261686 --- [auth-server] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2026-10-04T19:30:42.125-03:00  INFO 261686 --- [auth-server] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9000 (http) with context path '/'
+2026-10-04T19:30:42.208-03:00  INFO 261686 --- [auth-server] [           main] c.d.bancoxyz.auth.AuthServerApplication  : Started AuthServerApplication in 40.432 seconds (process running for 43.918)
+2026-10-04T19:30:45.298-03:00  INFO 261686 --- [auth-server] [0.1-9000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-04T19:30:45.299-03:00  INFO 261686 --- [auth-server] [0.1-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-10-04T19:30:45.301-03:00  INFO 261686 --- [auth-server] [0.1-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-10-04T19:30:48.620-03:00  INFO 261686 --- [auth-server] [ionShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-10-04T19:30:48.668-03:00  INFO 261686 --- [auth-server] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete

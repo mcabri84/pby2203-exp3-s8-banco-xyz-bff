@@ -1,0 +1,14 @@
+{
+  "publicacion": {
+    "eventoId": "b9b345aa-e0ca-4540-bfdf-d066f8e59120",
+    "estado": "EN_COLA",
+    "transaccionId": "2"
+  },
+  "procesamiento": {
+    "transaccionId": "2",
+    "tipoEvento": "TRANSACCION_PUBLICADA",
+    "eventoId": "b9b345aa-e0ca-4540-bfdf-d066f8e59120",
+    "procesadoEn": "2026-10-04T23:07:29.004883066Z",
+    "contenido": "{\"emitidoEn\":\"2026-10-04T23:07:10.792549739Z\",\"tipoEvento\":\"TRANSACCION_PUBLICADA\",\"eventoId\":\"b9b345aa-e0ca-4540-bfdf-d066f8e59120\",\"transaccion\":{\"id\":\"2\",\"fecha\":\"03-04-2024\",\"monto\":\"1200\",\"tipo\":\"credito\"}}"
+  }
+}

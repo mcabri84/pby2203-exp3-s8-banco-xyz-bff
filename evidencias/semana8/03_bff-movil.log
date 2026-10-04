@@ -1,0 +1,26 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::               (v3.5.16)
+
+2026-10-04T19:30:06.707-03:00  INFO 261689 --- [bff-movil] [           main] c.d.bancoxyz.movil.BffMovilApplication   : Starting BffMovilApplication v1.0.0-SNAPSHOT using Java 17.0.20.1 with PID 261689 (/home/mcabri/Escritorio/PBY2203/Exp3_S8/banco-xyz-bff/bff-movil/target/bff-movil-1.0.0-SNAPSHOT.jar started by mcabri in /home/mcabri/Escritorio/PBY2203/Exp3_S8/banco-xyz-bff)
+2026-10-04T19:30:06.715-03:00  INFO 261689 --- [bff-movil] [           main] c.d.bancoxyz.movil.BffMovilApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-10-04T19:30:25.490-03:00  INFO 261689 --- [bff-movil] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8102 (https)
+2026-10-04T19:30:25.683-03:00  INFO 261689 --- [bff-movil] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-10-04T19:30:25.684-03:00  INFO 261689 --- [bff-movil] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-10-04T19:30:25.788-03:00  INFO 261689 --- [bff-movil] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-10-04T19:30:25.791-03:00  INFO 261689 --- [bff-movil] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 18360 ms
+2026-10-04T19:30:30.094-03:00  INFO 261689 --- [bff-movil] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2026-10-04T19:30:35.946-03:00  INFO 261689 --- [bff-movil] [           main] o.a.t.util.net.NioEndpoint.certificate   : Connector [https-jsse-nio-127.0.0.1-8102], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [Set directly - location unknown] using alias [banco-bff] with trust store [null]
+2026-10-04T19:30:36.024-03:00  INFO 261689 --- [bff-movil] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8102 (https) with context path '/'
+2026-10-04T19:30:36.170-03:00  INFO 261689 --- [bff-movil] [           main] c.d.bancoxyz.movil.BffMovilApplication   : Started BffMovilApplication in 33.625 seconds (process running for 37.861)
+2026-10-04T19:30:36.955-03:00  INFO 261689 --- [bff-movil] [0.1-8102-exec-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-04T19:30:36.956-03:00  INFO 261689 --- [bff-movil] [0.1-8102-exec-5] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-10-04T19:30:36.960-03:00  INFO 261689 --- [bff-movil] [0.1-8102-exec-5] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2026-10-04T19:30:48.609-03:00  INFO 261689 --- [bff-movil] [ionShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-10-04T19:30:48.633-03:00  INFO 261689 --- [bff-movil] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete

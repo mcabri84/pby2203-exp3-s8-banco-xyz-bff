@@ -1,0 +1,42 @@
+[
+  {
+    "prueba": "Eureka mantiene autenticacion obligatoria",
+    "ok": true,
+    "detalle": "HTTP 401"
+  },
+  {
+    "prueba": "Cinco servicios registrados UP tras reiniciar Eureka",
+    "ok": true,
+    "detalle": "AUDITORIA-SERVICE, BANCO-API, BFF-CAJEROS, BFF-MOVIL, BFF-WEB"
+  },
+  {
+    "prueba": "BFF web mantiene consulta de datos",
+    "ok": true,
+    "detalle": "HTTP 200"
+  },
+  {
+    "prueba": "BFF movil mantiene consulta de datos",
+    "ok": true,
+    "detalle": "HTTP 200"
+  },
+  {
+    "prueba": "BFF cajeros mantiene consulta de datos",
+    "ok": true,
+    "detalle": "HTTP 200"
+  },
+  {
+    "prueba": "Eureka no agrega nodos de replicacion propios",
+    "ok": true,
+    "detalle": ""
+  },
+  {
+    "prueba": "Sin errores de replicacion 401 en el nuevo contenedor",
+    "ok": true,
+    "detalle": ""
+  },
+  {
+    "prueba": "Los nueve contenedores permanecen saludables",
+    "ok": true,
+    "detalle": ""
+  }
+]

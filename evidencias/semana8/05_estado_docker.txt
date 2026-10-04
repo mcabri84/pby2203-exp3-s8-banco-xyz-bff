@@ -1,0 +1,10 @@
+NAME                               IMAGE                            COMMAND                  SERVICE             CREATED         STATUS                        PORTS
+banco-xyz-s8-auditoria-service-1   banco-xyz-auditoria-service:s8   "java -jar /app/app.…"   auditoria-service   2 minutes ago   Up 51 seconds (healthy)       127.0.0.1:8104->8104/tcp
+banco-xyz-s8-auth-server-1         banco-xyz-auth-server:s8         "java -jar /app/app.…"   auth-server         3 minutes ago   Up 2 minutes (healthy)        127.0.0.1:9000->9000/tcp
+banco-xyz-s8-banco-api-1           banco-xyz-banco-api:s8           "java -jar /app/app.…"   banco-api           2 minutes ago   Up 28 seconds (healthy)       127.0.0.1:8100->8100/tcp
+banco-xyz-s8-bff-cajeros-1         banco-xyz-bff-cajeros:s8         "java -jar /app/app.…"   bff-cajeros         2 minutes ago   Up About a minute (healthy)   127.0.0.1:8103->8103/tcp
+banco-xyz-s8-bff-movil-1           banco-xyz-bff-movil:s8           "java -jar /app/app.…"   bff-movil           2 minutes ago   Up About a minute (healthy)   127.0.0.1:8102->8102/tcp
+banco-xyz-s8-bff-web-1             banco-xyz-bff-web:s8             "java -jar /app/app.…"   bff-web             2 minutes ago   Up About a minute (healthy)   127.0.0.1:8101->8101/tcp
+banco-xyz-s8-broker-1              apache/activemq-artemis:2.40.0   "/docker-run.sh run"     broker              3 minutes ago   Up 2 minutes (healthy)        1883/tcp, 5445/tcp, 5672/tcp, 61613/tcp, 61616/tcp, 127.0.0.1:8161->8161/tcp
+banco-xyz-s8-config-server-1       banco-xyz-config-server:s8       "java -jar /app/app.…"   config-server       3 minutes ago   Up 2 minutes (healthy)        127.0.0.1:8888->8888/tcp
+banco-xyz-s8-discovery-server-1    banco-xyz-discovery-server:s8    "java -jar /app/app.…"   discovery-server    3 minutes ago   Up 2 minutes (healthy)        127.0.0.1:8761->8761/tcp

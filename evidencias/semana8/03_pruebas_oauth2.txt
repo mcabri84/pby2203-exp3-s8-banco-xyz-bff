@@ -1,0 +1,35 @@
+PRUEBAS OAUTH2 BANCO XYZ S8
+Fecha: 2026-10-04T19:29:58.279923-03:00
+
+Servicio auth-server disponible en puerto 9000
+Servicio banco-api disponible en puerto 8100
+Servicio bff-web disponible en puerto 8101
+Servicio bff-movil disponible en puerto 8102
+Servicio bff-cajeros disponible en puerto 8103
+OK | Emision JWT web | HTTP 200 | esperado 200
+JWT web: emisor=http://localhost:9000, audiencia=banco-xyz, vigencia=300 segundos, permisos=['banco.read', 'canal.web']
+OK | Emision JWT movil | HTTP 200 | esperado 200
+JWT movil: emisor=http://localhost:9000, audiencia=banco-xyz, vigencia=300 segundos, permisos=['banco.read', 'canal.movil']
+OK | Emision JWT cajeros | HTTP 200 | esperado 200
+JWT cajeros: emisor=http://localhost:9000, audiencia=banco-xyz, vigencia=300 segundos, permisos=['banco.read', 'canal.cajeros']
+OK | API sin token | HTTP 401 | esperado 401
+OK | API con JWT autorizado | HTTP 200 | esperado 200
+API: registros=23, ejemplo={"cuenta_id": "137", "nombre": "Bob Johnson", "saldo": "7000", "edad": "", "tipo": "prestamo"}
+OK | WEB sin token | HTTP 401 | esperado 401
+OK | WEB con JWT autorizado | HTTP 200 | esperado 200
+WEB: registros=23, ejemplo={"cuenta_id": "137", "nombre": "Bob Johnson", "saldo": "7000", "edad": "", "tipo": "prestamo"}
+OK | MOVIL sin token | HTTP 401 | esperado 401
+OK | MOVIL con JWT autorizado | HTTP 200 | esperado 200
+MOVIL: registros=23, ejemplo={"cuentaId": "137", "nombre": "Bob Johnson", "saldo": "7000", "tipo": "prestamo"}
+OK | CAJEROS sin token | HTTP 401 | esperado 401
+OK | CAJEROS con JWT autorizado | HTTP 200 | esperado 200
+CAJEROS: registros=23, ejemplo={"cuentaId": "137", "saldo": "7000", "tipo": "prestamo"}
+OK | JWT WEB en canal MOVIL | HTTP 403 | esperado 403
+OK | JWT con firma alterada | HTTP 401 | esperado 401
+OK | Token fijo anterior rechazado | HTTP 401 | esperado 401
+OK | Cliente con clave incorrecta | HTTP 401 | esperado 401
+OK | Solicitud de permiso ajeno | HTTP 400 | esperado 400
+OK | Emision JWT sin permiso de lectura | HTTP 200 | esperado 200
+OK | API sin permiso banco.read | HTTP 403 | esperado 403
+
+Resultado: 18 comprobaciones HTTP correctas.

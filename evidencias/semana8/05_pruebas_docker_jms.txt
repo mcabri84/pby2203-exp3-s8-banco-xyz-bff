@@ -1,0 +1,28 @@
+VERIFICACION DOCKER Y JMS BANCO XYZ S8
+Fecha: 2026-10-04T20:07:01.193926-03:00
+
+OK | Nueve contenedores activos y saludables
+OK | Ocho imagenes de microservicios
+OK | OAuth2 emite JWT en Docker para web
+OK | OAuth2 emite JWT en Docker para movil
+OK | OAuth2 emite JWT en Docker para cajeros
+OK | BFF web obtiene datos desde contenedores
+OK | BFF movil obtiene datos desde contenedores
+OK | BFF cajeros obtiene datos desde contenedores
+OK | Configuracion central en Docker
+OK | Eureka incluye el consumidor de eventos | AUDITORIA-SERVICE, BANCO-API, BFF-CAJEROS, BFF-MOVIL, BFF-WEB
+OK | Auditoria protegida sin token | HTTP 401
+OK | Publicacion protegida sin token | HTTP 401
+OK | Publicacion exige permiso transacciones.write | HTTP 403
+OK | Publicacion asincrona de transaccion 1 | HTTP 202
+OK | Consumidor procesa evento cfa05975-ca9f-4779-9676-3e163f496804 | HTTP 200
+OK | Evento conserva datos de la transaccion original
+OK | Publicacion asincrona de transaccion 2 | HTTP 202
+OK | API acepta eventos con consumidor detenido
+OK | Consumidor procesa evento b9b345aa-e0ca-4540-bfdf-d066f8e59120 | HTTP 200
+OK | Auditoria conserva eventos al reiniciar
+OK | Fallback WEB en Docker
+OK | Circuito WEB OPEN en Docker
+OK | WEB recupera datos y circuito CLOSED en Docker
+OK | OAuth2 se mantiene tras recuperar API
+OK | Estado final: nueve servicios saludables

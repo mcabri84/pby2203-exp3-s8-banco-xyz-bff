@@ -1,0 +1,447 @@
+time="2026-10-04T20:03:10-03:00" level=warning msg="Docker Compose is configured to build using Bake, but buildx isn't installed"
+#0 building with "default" instance using docker driver
+
+#1 [config-server internal] load build definition from Dockerfile
+#1 transferring dockerfile: 488B done
+#1 DONE 0.1s
+
+#2 [auth-server internal] load build definition from Dockerfile
+#2 transferring dockerfile: 488B done
+#2 DONE 0.1s
+
+#3 [auth-server internal] load metadata for docker.io/library/eclipse-temurin:17-jre-jammy
+#3 ...
+
+#4 [config-server auth] library/eclipse-temurin:pull token for registry-1.docker.io
+#4 DONE 0.0s
+
+#3 [auth-server internal] load metadata for docker.io/library/eclipse-temurin:17-jre-jammy
+#3 DONE 1.6s
+
+#5 [config-server internal] load .dockerignore
+#5 transferring context: 87B done
+#5 DONE 0.1s
+
+#6 [auth-server internal] load .dockerignore
+#6 transferring context: 87B done
+#6 DONE 0.1s
+
+#7 [config-server 1/4] FROM docker.io/library/eclipse-temurin:17-jre-jammy@sha256:8993f1aed8b25fcea7a7047a7949c1866fa558fc6830d938c22c4f13b26be9d7
+#7 resolve docker.io/library/eclipse-temurin:17-jre-jammy@sha256:8993f1aed8b25fcea7a7047a7949c1866fa558fc6830d938c22c4f13b26be9d7
+#7 resolve docker.io/library/eclipse-temurin:17-jre-jammy@sha256:8993f1aed8b25fcea7a7047a7949c1866fa558fc6830d938c22c4f13b26be9d7 0.1s done
+#7 sha256:0a7d72162cd618905a141975f1f651af7fe3e996363588b9ba837c3664fb4360 2.46kB / 2.46kB 0.1s done
+#7 sha256:73b1cfb2d9602be3325a0710a023e138a9b89fb5d0924cdf6d656c668f5785dd 0B / 158B 0.2s
+#7 sha256:67ea9076d8f27f24192869d10fc4d7f00e4d34ab38843ff57dcc0f25db194d0b 0B / 47.52MB 0.2s
+#7 sha256:ffd29860ca713d718d516979425e8e71a07ffe790755fdc7abeffaebe713675a 0B / 16.11MB 0.2s
+#7 sha256:73b1cfb2d9602be3325a0710a023e138a9b89fb5d0924cdf6d656c668f5785dd 158B / 158B 0.3s done
+#7 sha256:98c4455a98982b35380ec62f90d5cf0edff02eeb4b3bb18595d871fdeb0c0c67 0B / 29.75MB 0.2s
+#7 ...
+
+#8 [auth-server internal] load build context
+#8 transferring context: 31.01MB 0.6s done
+#8 DONE 0.7s
+
+#7 [auth-server 1/4] FROM docker.io/library/eclipse-temurin:17-jre-jammy@sha256:8993f1aed8b25fcea7a7047a7949c1866fa558fc6830d938c22c4f13b26be9d7
+#7 sha256:98c4455a98982b35380ec62f90d5cf0edff02eeb4b3bb18595d871fdeb0c0c67 4.19MB / 29.75MB 0.5s
+#7 sha256:67ea9076d8f27f24192869d10fc4d7f00e4d34ab38843ff57dcc0f25db194d0b 6.29MB / 47.52MB 0.6s
+#7 sha256:ffd29860ca713d718d516979425e8e71a07ffe790755fdc7abeffaebe713675a 4.19MB / 16.11MB 0.6s
+#7 ...
+
+#9 [config-server internal] load build context
+#9 transferring context: 48.65MB 1.0s done
+#9 DONE 1.1s
+
+#7 [auth-server 1/4] FROM docker.io/library/eclipse-temurin:17-jre-jammy@sha256:8993f1aed8b25fcea7a7047a7949c1866fa558fc6830d938c22c4f13b26be9d7
+#7 sha256:67ea9076d8f27f24192869d10fc4d7f00e4d34ab38843ff57dcc0f25db194d0b 11.53MB / 47.52MB 0.8s
+#7 sha256:ffd29860ca713d718d516979425e8e71a07ffe790755fdc7abeffaebe713675a 10.49MB / 16.11MB 0.8s
+#7 sha256:98c4455a98982b35380ec62f90d5cf0edff02eeb4b3bb18595d871fdeb0c0c67 18.87MB / 29.75MB 0.8s
+#7 sha256:67ea9076d8f27f24192869d10fc4d7f00e4d34ab38843ff57dcc0f25db194d0b 20.97MB / 47.52MB 0.9s
+#7 sha256:ffd29860ca713d718d516979425e8e71a07ffe790755fdc7abeffaebe713675a 13.63MB / 16.11MB 0.9s
+#7 sha256:98c4455a98982b35380ec62f90d5cf0edff02eeb4b3bb18595d871fdeb0c0c67 25.17MB / 29.75MB 0.9s
+#7 sha256:67ea9076d8f27f24192869d10fc4d7f00e4d34ab38843ff57dcc0f25db194d0b 29.36MB / 47.52MB 1.1s
+#7 sha256:ffd29860ca713d718d516979425e8e71a07ffe790755fdc7abeffaebe713675a 16.11MB / 16.11MB 1.0s done
+#7 sha256:98c4455a98982b35380ec62f90d5cf0edff02eeb4b3bb18595d871fdeb0c0c67 29.75MB / 29.75MB 1.0s done
+#7 sha256:67ea9076d8f27f24192869d10fc4d7f00e4d34ab38843ff57dcc0f25db194d0b 47.52MB / 47.52MB 1.4s
+#7 sha256:98c4455a98982b35380ec62f90d5cf0edff02eeb4b3bb18595d871fdeb0c0c67 29.75MB / 29.75MB 1.0s done
+#7 extracting sha256:98c4455a98982b35380ec62f90d5cf0edff02eeb4b3bb18595d871fdeb0c0c67
+#7 sha256:67ea9076d8f27f24192869d10fc4d7f00e4d34ab38843ff57dcc0f25db194d0b 47.52MB / 47.52MB 3.4s done
+#7 sha256:67ea9076d8f27f24192869d10fc4d7f00e4d34ab38843ff57dcc0f25db194d0b 47.52MB / 47.52MB 3.4s done
+#7 extracting sha256:98c4455a98982b35380ec62f90d5cf0edff02eeb4b3bb18595d871fdeb0c0c67 4.6s done
+#7 extracting sha256:98c4455a98982b35380ec62f90d5cf0edff02eeb4b3bb18595d871fdeb0c0c67 4.6s done
+#7 extracting sha256:ffd29860ca713d718d516979425e8e71a07ffe790755fdc7abeffaebe713675a
+#7 extracting sha256:ffd29860ca713d718d516979425e8e71a07ffe790755fdc7abeffaebe713675a 1.1s done
+#7 extracting sha256:ffd29860ca713d718d516979425e8e71a07ffe790755fdc7abeffaebe713675a 1.1s done
+#7 extracting sha256:67ea9076d8f27f24192869d10fc4d7f00e4d34ab38843ff57dcc0f25db194d0b
+#7 extracting sha256:67ea9076d8f27f24192869d10fc4d7f00e4d34ab38843ff57dcc0f25db194d0b 1.8s done
+#7 extracting sha256:67ea9076d8f27f24192869d10fc4d7f00e4d34ab38843ff57dcc0f25db194d0b 1.8s done
+#7 extracting sha256:73b1cfb2d9602be3325a0710a023e138a9b89fb5d0924cdf6d656c668f5785dd 0.1s done
+#7 extracting sha256:0a7d72162cd618905a141975f1f651af7fe3e996363588b9ba837c3664fb4360 0.1s done
+#7 extracting sha256:0a7d72162cd618905a141975f1f651af7fe3e996363588b9ba837c3664fb4360 0.1s done
+#7 DONE 9.2s
+
+#10 [auth-server 2/4] RUN apt-get update && apt-get install -y --no-install-recommends curl     && rm -rf /var/lib/apt/lists/*     && groupadd --gid 10001 app     && useradd --uid 10001 --gid app --create-home --shell /usr/sbin/nologin app     && mkdir -p /app /data && chown app:app /app /data
+#10 1.033 Get:1 http://security.ubuntu.com/ubuntu jammy-security InRelease [129 kB]
+#10 1.080 Get:2 http://archive.ubuntu.com/ubuntu jammy InRelease [270 kB]
+#10 2.667 Get:3 http://archive.ubuntu.com/ubuntu jammy-updates InRelease [128 kB]
+#10 2.667 Get:4 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 Packages [84.6 kB]
+#10 3.596 Get:5 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 Packages [7,843 kB]
+#10 3.820 Get:6 http://archive.ubuntu.com/ubuntu jammy-backports InRelease [127 kB]
+#10 4.236 Get:7 http://archive.ubuntu.com/ubuntu jammy/universe amd64 Packages [17.5 MB]
+#10 7.603 Get:8 http://security.ubuntu.com/ubuntu jammy-security/main amd64 Packages [4,376 kB]
+#10 10.41 Get:9 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 Packages [1,321 kB]
+#10 11.93 Get:10 http://archive.ubuntu.com/ubuntu jammy/main amd64 Packages [1,792 kB]
+#10 12.62 Get:11 http://archive.ubuntu.com/ubuntu jammy/multiverse amd64 Packages [266 kB]
+#10 12.79 Get:12 http://archive.ubuntu.com/ubuntu jammy/restricted amd64 Packages [164 kB]
+#10 12.82 Get:13 http://archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 Packages [93.2 kB]
+#10 12.82 Get:14 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 Packages [4,747 kB]
+#10 13.08 Get:15 http://archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 Packages [8,198 kB]
+#10 14.44 Get:16 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 Packages [1,623 kB]
+#10 14.73 Get:17 http://archive.ubuntu.com/ubuntu jammy-backports/main amd64 Packages [82.9 kB]
+#10 14.74 Get:18 http://archive.ubuntu.com/ubuntu jammy-backports/universe amd64 Packages [35.6 kB]
+#10 15.31 Fetched 48.8 MB in 15s (3,309 kB/s)
+#10 15.31 Reading package lists...
+#10 17.44 Reading package lists...
+#10 19.59 Building dependency tree...
+#10 19.94 Reading state information...
+#10 20.40 curl is already the newest version (7.81.0-1ubuntu1.29).
+#10 20.40 0 upgraded, 0 newly installed, 0 to remove and 1 not upgraded.
+#10 DONE 20.5s
+
+#11 [auth-server 3/4] WORKDIR /app
+#11 DONE 0.1s
+
+#12 [auth-server 4/4] COPY --chown=app:app target/*-SNAPSHOT.jar /app/app.jar
+#12 DONE 0.6s
+
+#13 [config-server 4/4] COPY --chown=app:app target/*-SNAPSHOT.jar /app/app.jar
+#13 DONE 0.6s
+
+#14 [config-server] exporting to image
+#14 exporting layers
+#14 ...
+
+#15 [auth-server] exporting to image
+#15 exporting layers 3.4s done
+#15 exporting manifest sha256:e35a3b7231856126b0617d40dfa5c985beded8624fb7bc63aa12fe0f3c831e7e 0.1s done
+#15 exporting config sha256:462eb641e2456cba5ca49005796a10dcaa5d91128e3e4e2148e444705c8c1cfa 0.1s done
+#15 exporting attestation manifest sha256:c611c9d0e3168d1ede184f2d6f8e66602ee0521ebd8049ce051c9bd42c88a8f0 0.1s done
+#15 exporting manifest list sha256:05cc7625aa86cd354a75d0782ea26e377d6f6c2caf62f9b069dc1eadea845bf0 0.1s done
+#15 naming to docker.io/library/banco-xyz-auth-server:s8 0.0s done
+#15 unpacking to docker.io/library/banco-xyz-auth-server:s8 0.6s done
+#15 DONE 4.3s
+
+#14 [config-server] exporting to image
+#14 exporting layers 4.9s done
+#14 exporting manifest sha256:caf102d441e8884feb4c5f0e86db78afbcb85c6edf806a53cc6955d4eb6d6988 0.1s done
+#14 exporting config sha256:e75f830d58ddc0ea2a74eda1cad1c30bd5589ee17a8b09c48e2d5d3b736aa160 0.1s done
+#14 ...
+
+#16 [auth-server] resolving provenance for metadata file
+#16 DONE 0.0s
+
+#14 [config-server] exporting to image
+#14 exporting attestation manifest sha256:b1c303fda75b26eab707f9a89e7f42d10932bd5aa0d3df5b482cf757c48af865
+#14 exporting attestation manifest sha256:b1c303fda75b26eab707f9a89e7f42d10932bd5aa0d3df5b482cf757c48af865 0.2s done
+#14 exporting manifest list sha256:38010be659689d89af819977a7a67a44a7c2054afdfc64e77be947d3639385e7 0.1s done
+#14 naming to docker.io/library/banco-xyz-config-server:s8
+#14 ...
+
+#17 [discovery-server internal] load build definition from Dockerfile
+#17 transferring dockerfile: 488B done
+#17 DONE 0.4s
+
+#14 [config-server] exporting to image
+#14 naming to docker.io/library/banco-xyz-config-server:s8 0.0s done
+#14 unpacking to docker.io/library/banco-xyz-config-server:s8
+#14 ...
+
+#3 [discovery-server internal] load metadata for docker.io/library/eclipse-temurin:17-jre-jammy
+#3 DONE 2.2s
+
+#14 [config-server] exporting to image
+#14 unpacking to docker.io/library/banco-xyz-config-server:s8 0.8s done
+#14 DONE 6.4s
+
+#7 [discovery-server 1/4] FROM docker.io/library/eclipse-temurin:17-jre-jammy@sha256:8993f1aed8b25fcea7a7047a7949c1866fa558fc6830d938c22c4f13b26be9d7
+#7 resolve docker.io/library/eclipse-temurin:17-jre-jammy@sha256:8993f1aed8b25fcea7a7047a7949c1866fa558fc6830d938c22c4f13b26be9d7 0.1s done
+#7 sha256:0a7d72162cd618905a141975f1f651af7fe3e996363588b9ba837c3664fb4360 2.46kB / 2.46kB 0.1s done
+#7 sha256:73b1cfb2d9602be3325a0710a023e138a9b89fb5d0924cdf6d656c668f5785dd 158B / 158B 0.3s done
+#7 sha256:67ea9076d8f27f24192869d10fc4d7f00e4d34ab38843ff57dcc0f25db194d0b 47.52MB / 47.52MB 3.4s done
+#7 sha256:ffd29860ca713d718d516979425e8e71a07ffe790755fdc7abeffaebe713675a 16.11MB / 16.11MB 1.0s done
+#7 sha256:98c4455a98982b35380ec62f90d5cf0edff02eeb4b3bb18595d871fdeb0c0c67 29.75MB / 29.75MB 1.0s done
+#7 extracting sha256:98c4455a98982b35380ec62f90d5cf0edff02eeb4b3bb18595d871fdeb0c0c67 4.6s done
+#7 extracting sha256:ffd29860ca713d718d516979425e8e71a07ffe790755fdc7abeffaebe713675a 1.1s done
+#7 extracting sha256:67ea9076d8f27f24192869d10fc4d7f00e4d34ab38843ff57dcc0f25db194d0b 1.8s done
+#7 extracting sha256:73b1cfb2d9602be3325a0710a023e138a9b89fb5d0924cdf6d656c668f5785dd 0.1s done
+#7 extracting sha256:0a7d72162cd618905a141975f1f651af7fe3e996363588b9ba837c3664fb4360 0.1s done
+#7 DONE 9.2s
+
+#10 [discovery-server 2/4] RUN apt-get update && apt-get install -y --no-install-recommends curl     && rm -rf /var/lib/apt/lists/*     && groupadd --gid 10001 app     && useradd --uid 10001 --gid app --create-home --shell /usr/sbin/nologin app     && mkdir -p /app /data && chown app:app /app /data
+#10 1.035 Get:1 http://security.ubuntu.com/ubuntu jammy-security InRelease [129 kB]
+#10 1.082 Get:2 http://archive.ubuntu.com/ubuntu jammy InRelease [270 kB]
+#10 2.669 Get:3 http://archive.ubuntu.com/ubuntu jammy-updates InRelease [128 kB]
+#10 2.669 Get:4 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 Packages [84.6 kB]
+#10 3.598 Get:5 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 Packages [7,843 kB]
+#10 3.821 Get:6 http://archive.ubuntu.com/ubuntu jammy-backports InRelease [127 kB]
+#10 4.238 Get:7 http://archive.ubuntu.com/ubuntu jammy/universe amd64 Packages [17.5 MB]
+#10 7.604 Get:8 http://security.ubuntu.com/ubuntu jammy-security/main amd64 Packages [4,376 kB]
+#10 10.42 Get:9 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 Packages [1,321 kB]
+#10 11.93 Get:10 http://archive.ubuntu.com/ubuntu jammy/main amd64 Packages [1,792 kB]
+#10 12.62 Get:11 http://archive.ubuntu.com/ubuntu jammy/multiverse amd64 Packages [266 kB]
+#10 12.79 Get:12 http://archive.ubuntu.com/ubuntu jammy/restricted amd64 Packages [164 kB]
+#10 12.82 Get:13 http://archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 Packages [93.2 kB]
+#10 12.82 Get:14 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 Packages [4,747 kB]
+#10 13.08 Get:15 http://archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 Packages [8,198 kB]
+#10 14.45 Get:16 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 Packages [1,623 kB]
+#10 14.74 Get:17 http://archive.ubuntu.com/ubuntu jammy-backports/main amd64 Packages [82.9 kB]
+#10 14.74 Get:18 http://archive.ubuntu.com/ubuntu jammy-backports/universe amd64 Packages [35.6 kB]
+#10 15.31 Fetched 48.8 MB in 15s (3,309 kB/s)
+#10 15.31 Reading package lists...
+#10 17.45 Reading package lists...
+#10 19.60 Building dependency tree...
+#10 19.94 Reading state information...
+#10 20.41 curl is already the newest version (7.81.0-1ubuntu1.29).
+#10 20.41 0 upgraded, 0 newly installed, 0 to remove and 1 not upgraded.
+#10 DONE 20.5s
+
+#11 [discovery-server 3/4] WORKDIR /app
+#11 DONE 0.1s
+
+#18 [discovery-server internal] load .dockerignore
+#18 transferring context: 87B done
+#18 DONE 0.1s
+
+#19 [discovery-server internal] load build context
+#19 ...
+
+#20 [config-server] resolving provenance for metadata file
+#20 DONE 0.0s
+
+#19 [discovery-server internal] load build context
+#19 transferring context: 63.08MB 0.8s done
+#19 DONE 0.9s
+
+#21 [discovery-server 4/4] COPY --chown=app:app target/*-SNAPSHOT.jar /app/app.jar
+#21 DONE 6.5s
+
+#22 [discovery-server] exporting to image
+#22 exporting layers
+#22 exporting layers 4.2s done
+#22 exporting manifest sha256:1272bf960f697cd027b107fdf10a0a5babb2c5562386b5bb5c2876d4226c9db2 0.0s done
+#22 exporting config sha256:c7b39e96c413f49d68395493051e1d0ec013024cf308895a4fbe447ade4a60f1 0.0s done
+#22 exporting attestation manifest sha256:1eba9f4c51f5b746cc68a0a144abda23c033fc17cd87828d5639af9896ff3297 0.0s done
+#22 exporting manifest list sha256:9b5837a87cc172b69f5a8ced77e4b12a43637d111533121a6f62ca563e5cc52e 0.0s done
+#22 naming to docker.io/library/banco-xyz-discovery-server:s8 done
+#22 unpacking to docker.io/library/banco-xyz-discovery-server:s8
+#22 unpacking to docker.io/library/banco-xyz-discovery-server:s8 0.6s done
+#22 DONE 4.9s
+
+#23 [discovery-server] resolving provenance for metadata file
+#23 DONE 0.0s
+
+#24 [auditoria-service internal] load build definition from Dockerfile
+#24 transferring dockerfile: 488B done
+#24 DONE 0.1s
+
+#25 [banco-api internal] load build definition from Dockerfile
+#25 transferring dockerfile: 488B done
+#25 DONE 0.1s
+
+#3 [banco-api internal] load metadata for docker.io/library/eclipse-temurin:17-jre-jammy
+#3 DONE 2.4s
+
+#26 [auditoria-service internal] load .dockerignore
+#26 transferring context: 87B done
+#26 DONE 0.1s
+
+#27 [banco-api internal] load .dockerignore
+#27 transferring context: 87B done
+#27 DONE 0.1s
+
+#28 [auditoria-service internal] load build context
+#28 ...
+
+#7 [auditoria-service 1/4] FROM docker.io/library/eclipse-temurin:17-jre-jammy@sha256:8993f1aed8b25fcea7a7047a7949c1866fa558fc6830d938c22c4f13b26be9d7
+#7 resolve docker.io/library/eclipse-temurin:17-jre-jammy@sha256:8993f1aed8b25fcea7a7047a7949c1866fa558fc6830d938c22c4f13b26be9d7 0.1s done
+#7 DONE 9.3s
+
+#28 [auditoria-service internal] load build context
+#28 transferring context: 64.38MB 1.2s done
+#28 DONE 1.3s
+
+#29 [banco-api internal] load build context
+#29 transferring context: 64.51MB 1.1s done
+#29 DONE 1.2s
+
+#10 [auditoria-service 2/4] RUN apt-get update && apt-get install -y --no-install-recommends curl     && rm -rf /var/lib/apt/lists/*     && groupadd --gid 10001 app     && useradd --uid 10001 --gid app --create-home --shell /usr/sbin/nologin app     && mkdir -p /app /data && chown app:app /app /data
+#10 CACHED
+
+#11 [auditoria-service 3/4] WORKDIR /app
+#11 CACHED
+
+#30 [auditoria-service 4/4] COPY --chown=app:app target/*-SNAPSHOT.jar /app/app.jar
+#30 ...
+
+#31 [banco-api 4/4] COPY --chown=app:app target/*-SNAPSHOT.jar /app/app.jar
+#31 DONE 10.3s
+
+#30 [auditoria-service 4/4] COPY --chown=app:app target/*-SNAPSHOT.jar /app/app.jar
+#30 DONE 10.2s
+
+#32 [auditoria-service] exporting to image
+#32 exporting layers
+#32 exporting layers 5.9s done
+#32 exporting manifest sha256:0c13e72e3be01facc899cee9ae27ec15001d00719f2ef4582164e3f3c37d2906 0.0s done
+#32 exporting config sha256:b7235a6f17a3749c9b759d104f878eb4e795bb51aa21f5f8fa8427de815903f3 0.0s done
+#32 exporting attestation manifest sha256:cbb9d36dc84eb0f3fde8e2bcee74a83f2659adc925d77607bf423f172729944a 0.1s done
+#32 exporting manifest list sha256:6a235db4364afb08a7626129035fdc445b3472f69dafe2a999aeb7f1dba86ea8
+#32 exporting manifest list sha256:6a235db4364afb08a7626129035fdc445b3472f69dafe2a999aeb7f1dba86ea8 0.0s done
+#32 naming to docker.io/library/banco-xyz-auditoria-service:s8 done
+#32 unpacking to docker.io/library/banco-xyz-auditoria-service:s8
+#32 unpacking to docker.io/library/banco-xyz-auditoria-service:s8 1.0s done
+#32 DONE 7.1s
+
+#33 [banco-api] exporting to image
+#33 exporting layers 5.9s done
+#33 exporting manifest sha256:bd64484129fea2dd34a3d8e30ffb78c1fd2abfd7c02c1927cc4ff38233e4cad9 0.0s done
+#33 exporting config sha256:a8744806832ed9198a333fa49f2ec74d92f6346bf5ade6c8f82ec7c894d15a2a 0.0s done
+#33 exporting attestation manifest sha256:f611419754c02e69ce031fdedf3185460fb371a10f29efe116b18857e6975aa3 0.1s done
+#33 exporting manifest list sha256:3a666203f693d20f804f4fc3177947ad0d8396334e01f7c5b0de8be6bdd7ba45 0.0s done
+#33 naming to docker.io/library/banco-xyz-banco-api:s8 0.0s done
+#33 unpacking to docker.io/library/banco-xyz-banco-api:s8 1.0s done
+#33 DONE 7.2s
+
+#34 [auditoria-service] resolving provenance for metadata file
+#34 DONE 0.1s
+
+#35 [banco-api] resolving provenance for metadata file
+#35 DONE 0.0s
+
+#36 [bff-movil internal] load build definition from Dockerfile
+#36 transferring dockerfile: 488B done
+#36 DONE 0.1s
+
+#37 [bff-cajeros internal] load build definition from Dockerfile
+#37 transferring dockerfile: 488B done
+#37 DONE 0.1s
+
+#3 [bff-cajeros internal] load metadata for docker.io/library/eclipse-temurin:17-jre-jammy
+#3 DONE 2.6s
+
+#38 [bff-cajeros internal] load .dockerignore
+#38 transferring context: 87B done
+#38 DONE 0.1s
+
+#39 [bff-movil internal] load .dockerignore
+#39 transferring context: 87B done
+#39 DONE 0.1s
+
+#7 [bff-movil 1/4] FROM docker.io/library/eclipse-temurin:17-jre-jammy@sha256:8993f1aed8b25fcea7a7047a7949c1866fa558fc6830d938c22c4f13b26be9d7
+#7 resolve docker.io/library/eclipse-temurin:17-jre-jammy@sha256:8993f1aed8b25fcea7a7047a7949c1866fa558fc6830d938c22c4f13b26be9d7
+#7 resolve docker.io/library/eclipse-temurin:17-jre-jammy@sha256:8993f1aed8b25fcea7a7047a7949c1866fa558fc6830d938c22c4f13b26be9d7 0.1s done
+#7 DONE 9.4s
+
+#40 [bff-cajeros internal] load build context
+#40 transferring context: 51.70MB 0.9s done
+#40 DONE 1.0s
+
+#41 [bff-movil internal] load build context
+#41 transferring context: 51.70MB 0.9s done
+#41 DONE 1.0s
+
+#10 [bff-cajeros 2/4] RUN apt-get update && apt-get install -y --no-install-recommends curl     && rm -rf /var/lib/apt/lists/*     && groupadd --gid 10001 app     && useradd --uid 10001 --gid app --create-home --shell /usr/sbin/nologin app     && mkdir -p /app /data && chown app:app /app /data
+#10 CACHED
+
+#11 [bff-cajeros 3/4] WORKDIR /app
+#11 CACHED
+
+#42 [bff-movil 4/4] COPY --chown=app:app target/*-SNAPSHOT.jar /app/app.jar
+#42 ...
+
+#43 [bff-cajeros 4/4] COPY --chown=app:app target/*-SNAPSHOT.jar /app/app.jar
+#43 DONE 8.5s
+
+#42 [bff-movil 4/4] COPY --chown=app:app target/*-SNAPSHOT.jar /app/app.jar
+#42 DONE 8.5s
+
+#44 [bff-movil] exporting to image
+#44 exporting layers
+#44 exporting layers 5.1s done
+#44 exporting manifest sha256:bc3329208bc95ae8487842edea6cd3dacfd0610174411376f2f557156b5150c8 0.1s done
+#44 exporting config sha256:edf84289bd122af232883ae09ad69545a5e56ff8d720cfbda1125b3d0fe7d6a5
+#44 exporting config sha256:edf84289bd122af232883ae09ad69545a5e56ff8d720cfbda1125b3d0fe7d6a5 0.0s done
+#44 exporting attestation manifest sha256:bfa84297271cad91937f3ce8e06f4a65f5baa94b9d4da4165886c32b52cc94af
+#44 exporting attestation manifest sha256:bfa84297271cad91937f3ce8e06f4a65f5baa94b9d4da4165886c32b52cc94af 0.1s done
+#44 exporting manifest list sha256:53b5cb728cfeb668cd4b13d41946e3b73435ef0a2438b475a92e4b47f9a6f3e7 0.0s done
+#44 naming to docker.io/library/banco-xyz-bff-movil:s8 done
+#44 unpacking to docker.io/library/banco-xyz-bff-movil:s8
+#44 unpacking to docker.io/library/banco-xyz-bff-movil:s8 0.8s done
+#44 DONE 6.3s
+
+#45 [bff-cajeros] exporting to image
+#45 exporting layers 5.2s done
+#45 exporting manifest sha256:20ba1da323780b1e2bbfa4af4393ec1451ed6628f95b828d68faf8dc138145e1 0.1s done
+#45 exporting config sha256:937ba2db8f6ccc17a3efbb882e8a90053dab438af105262853fff2146a4b94ba 0.0s done
+#45 exporting attestation manifest sha256:0e05023a3129593d0a40abaa93a82493bc5555980b30da076827dc22597ea2b2 0.1s done
+#45 exporting manifest list sha256:d684fc522398d330a0a15d87dc0263268dfab1ede21c80e8edcd95888d8c5837 0.0s done
+#45 naming to docker.io/library/banco-xyz-bff-cajeros:s8 done
+#45 unpacking to docker.io/library/banco-xyz-bff-cajeros:s8 0.8s done
+#45 DONE 6.3s
+
+#46 [bff-cajeros] resolving provenance for metadata file
+#46 DONE 0.1s
+
+#47 [bff-movil] resolving provenance for metadata file
+#47 DONE 0.0s
+
+#48 [bff-web internal] load build definition from Dockerfile
+#48 transferring dockerfile: 488B done
+#48 DONE 0.0s
+
+#3 [bff-web internal] load metadata for docker.io/library/eclipse-temurin:17-jre-jammy
+#3 DONE 2.8s
+
+#49 [bff-web internal] load .dockerignore
+#49 transferring context: 87B done
+#49 DONE 0.0s
+
+#7 [bff-web 1/4] FROM docker.io/library/eclipse-temurin:17-jre-jammy@sha256:8993f1aed8b25fcea7a7047a7949c1866fa558fc6830d938c22c4f13b26be9d7
+#7 resolve docker.io/library/eclipse-temurin:17-jre-jammy@sha256:8993f1aed8b25fcea7a7047a7949c1866fa558fc6830d938c22c4f13b26be9d7 0.1s done
+#7 DONE 9.5s
+
+#50 [bff-web internal] load build context
+#50 transferring context: 51.70MB 0.6s done
+#50 DONE 0.7s
+
+#10 [bff-web 2/4] RUN apt-get update && apt-get install -y --no-install-recommends curl     && rm -rf /var/lib/apt/lists/*     && groupadd --gid 10001 app     && useradd --uid 10001 --gid app --create-home --shell /usr/sbin/nologin app     && mkdir -p /app /data && chown app:app /app /data
+#10 CACHED
+
+#11 [bff-web 3/4] WORKDIR /app
+#11 CACHED
+
+#51 [bff-web 4/4] COPY --chown=app:app target/*-SNAPSHOT.jar /app/app.jar
+#51 DONE 0.6s
+
+#52 [bff-web] exporting to image
+#52 exporting layers 4.3s done
+#52 exporting manifest sha256:3bb2b5d942e456c53f2c0c98c78c98ed72954fac8fb04cf7d7cb72ec922e64f7 0.1s done
+#52 exporting config sha256:2752a44ab94afe8b36a8bf9014d41b06a9b9afbc9bb1dca60c1ef24c8e7324cb 0.1s done
+#52 exporting attestation manifest sha256:c333bacac40d2402b148a69f0aad97908e79423033e188eefad1bfe5fda19a08
+#52 exporting attestation manifest sha256:c333bacac40d2402b148a69f0aad97908e79423033e188eefad1bfe5fda19a08 0.2s done
+#52 exporting manifest list sha256:9f20b839899c90b0c91708970a4c7a9af0bc29f24e121b132e3eb1c86ae20e25
+#52 exporting manifest list sha256:9f20b839899c90b0c91708970a4c7a9af0bc29f24e121b132e3eb1c86ae20e25 0.1s done
+#52 naming to docker.io/library/banco-xyz-bff-web:s8 0.0s done
+#52 unpacking to docker.io/library/banco-xyz-bff-web:s8
+#52 unpacking to docker.io/library/banco-xyz-bff-web:s8 0.6s done
+#52 DONE 5.3s
+
+#53 [bff-web] resolving provenance for metadata file
+#53 DONE 0.0s
+ auditoria-service  Built
+ auth-server  Built
+ banco-api  Built
+ bff-cajeros  Built
+ bff-movil  Built
+ bff-web  Built
+ config-server  Built
+ discovery-server  Built

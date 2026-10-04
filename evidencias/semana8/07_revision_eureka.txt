@@ -1,0 +1,11 @@
+REVISION DEL SERVIDOR EUREKA UNICO
+Fecha: 2026-10-04T20:31:37.343645-03:00
+
+OK | Eureka mantiene autenticacion obligatoria | HTTP 401
+OK | Cinco servicios registrados UP tras reiniciar Eureka | AUDITORIA-SERVICE, BANCO-API, BFF-CAJEROS, BFF-MOVIL, BFF-WEB
+OK | BFF web mantiene consulta de datos | HTTP 200
+OK | BFF movil mantiene consulta de datos | HTTP 200
+OK | BFF cajeros mantiene consulta de datos | HTTP 200
+OK | Eureka no agrega nodos de replicacion propios
+OK | Sin errores de replicacion 401 en el nuevo contenedor
+OK | Los nueve contenedores permanecen saludables

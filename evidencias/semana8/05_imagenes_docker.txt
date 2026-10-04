@@ -1,0 +1,10 @@
+CONTAINER                          REPOSITORY                    TAG                 PLATFORM            IMAGE ID            SIZE                CREATED
+banco-xyz-s8-auditoria-service-1   banco-xyz-auditoria-service   s8                  linux/amd64         6a235db4364a        151MB               3 minutes ago
+banco-xyz-s8-auth-server-1         banco-xyz-auth-server         s8                  linux/amd64         05cc7625aa86        121MB               4 minutes ago
+banco-xyz-s8-banco-api-1           banco-xyz-banco-api           s8                  linux/amd64         3a666203f693        151MB               3 minutes ago
+banco-xyz-s8-bff-cajeros-1         banco-xyz-bff-cajeros         s8                  linux/amd64         d684fc522398        139MB               3 minutes ago
+banco-xyz-s8-bff-movil-1           banco-xyz-bff-movil           s8                  linux/amd64         53b5cb728cfe        139MB               3 minutes ago
+banco-xyz-s8-bff-web-1             banco-xyz-bff-web             s8                  linux/amd64         9f20b839899c        139MB               3 minutes ago
+banco-xyz-s8-broker-1              apache/activemq-artemis       2.40.0              linux/amd64         6634e2a523fd        147MB               3 minutes ago
+banco-xyz-s8-config-server-1       banco-xyz-config-server       s8                  linux/amd64         38010be65968        137MB               4 minutes ago
+banco-xyz-s8-discovery-server-1    banco-xyz-discovery-server    s8                  linux/amd64         9b5837a87cc1        150MB               4 minutes ago

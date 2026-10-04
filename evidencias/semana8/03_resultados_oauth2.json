@@ -1,0 +1,110 @@
+[
+  {
+    "prueba": "Emision JWT web",
+    "http": 200,
+    "esperado": 200,
+    "ok": true
+  },
+  {
+    "prueba": "Emision JWT movil",
+    "http": 200,
+    "esperado": 200,
+    "ok": true
+  },
+  {
+    "prueba": "Emision JWT cajeros",
+    "http": 200,
+    "esperado": 200,
+    "ok": true
+  },
+  {
+    "prueba": "API sin token",
+    "http": 401,
+    "esperado": 401,
+    "ok": true
+  },
+  {
+    "prueba": "API con JWT autorizado",
+    "http": 200,
+    "esperado": 200,
+    "ok": true
+  },
+  {
+    "prueba": "WEB sin token",
+    "http": 401,
+    "esperado": 401,
+    "ok": true
+  },
+  {
+    "prueba": "WEB con JWT autorizado",
+    "http": 200,
+    "esperado": 200,
+    "ok": true
+  },
+  {
+    "prueba": "MOVIL sin token",
+    "http": 401,
+    "esperado": 401,
+    "ok": true
+  },
+  {
+    "prueba": "MOVIL con JWT autorizado",
+    "http": 200,
+    "esperado": 200,
+    "ok": true
+  },
+  {
+    "prueba": "CAJEROS sin token",
+    "http": 401,
+    "esperado": 401,
+    "ok": true
+  },
+  {
+    "prueba": "CAJEROS con JWT autorizado",
+    "http": 200,
+    "esperado": 200,
+    "ok": true
+  },
+  {
+    "prueba": "JWT WEB en canal MOVIL",
+    "http": 403,
+    "esperado": 403,
+    "ok": true
+  },
+  {
+    "prueba": "JWT con firma alterada",
+    "http": 401,
+    "esperado": 401,
+    "ok": true
+  },
+  {
+    "prueba": "Token fijo anterior rechazado",
+    "http": 401,
+    "esperado": 401,
+    "ok": true
+  },
+  {
+    "prueba": "Cliente con clave incorrecta",
+    "http": 401,
+    "esperado": 401,
+    "ok": true
+  },
+  {
+    "prueba": "Solicitud de permiso ajeno",
+    "http": 400,
+    "esperado": 400,
+    "ok": true
+  },
+  {
+    "prueba": "Emision JWT sin permiso de lectura",
+    "http": 200,
+    "esperado": 200,
+    "ok": true
+  },
+  {
+    "prueba": "API sin permiso banco.read",
+    "http": 403,
+    "esperado": 403,
+    "ok": true
+  }
+]

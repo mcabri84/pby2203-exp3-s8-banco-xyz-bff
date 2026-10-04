@@ -1,0 +1,243 @@
+name: banco-xyz-s8
+services:
+  config-server:
+    build: ./config-server
+    image: banco-xyz-config-server:s8
+    restart: unless-stopped
+    mem_limit: 512m
+    ports:
+      - "127.0.0.1:8888:8888"
+    environment:
+      SERVER_ADDRESS: "0.0.0.0"
+      JAVA_TOOL_OPTIONS: "-Xms48m -Xmx192m -XX:MaxMetaspaceSize=224m"
+      SERVICE_HOST: "config-server"
+      INFRA_SECRET: "${INFRA_SECRET:?Ejecute scripts/preparar_entorno.py}"
+    healthcheck:
+      test: ["CMD", "curl", "-fkSs", "--max-time", "3", "http://localhost:8888/actuator/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 18
+      start_period: 90s
+  discovery-server:
+    build: ./discovery-server
+    image: banco-xyz-discovery-server:s8
+    restart: unless-stopped
+    mem_limit: 512m
+    ports:
+      - "127.0.0.1:8761:8761"
+    environment:
+      SERVER_ADDRESS: "0.0.0.0"
+      JAVA_TOOL_OPTIONS: "-Xms48m -Xmx192m -XX:MaxMetaspaceSize=224m"
+      SERVICE_HOST: "discovery-server"
+      INFRA_SECRET: "${INFRA_SECRET:?Ejecute scripts/preparar_entorno.py}"
+    healthcheck:
+      test: ["CMD", "curl", "-fkSs", "--max-time", "3", "http://localhost:8761/actuator/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 18
+      start_period: 90s
+  auth-server:
+    build: ./auth-server
+    image: banco-xyz-auth-server:s8
+    restart: unless-stopped
+    mem_limit: 512m
+    ports:
+      - "127.0.0.1:9000:9000"
+    environment:
+      SERVER_ADDRESS: "0.0.0.0"
+      JAVA_TOOL_OPTIONS: "-Xms48m -Xmx192m -XX:MaxMetaspaceSize=224m"
+      SERVICE_HOST: "auth-server"
+      AUTH_ISSUER: "${AUTH_ISSUER:-http://localhost:9000}"
+      AUTH_WEB_SECRET: "${AUTH_WEB_SECRET:?Falta AUTH_WEB_SECRET}"
+      AUTH_MOVIL_SECRET: "${AUTH_MOVIL_SECRET:?Falta AUTH_MOVIL_SECRET}"
+      AUTH_CAJEROS_SECRET: "${AUTH_CAJEROS_SECRET:?Falta AUTH_CAJEROS_SECRET}"
+    healthcheck:
+      test: ["CMD", "curl", "-fkSs", "--max-time", "3", "http://localhost:9000/actuator/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 18
+      start_period: 90s
+  banco-api:
+    build: ./banco-api
+    image: banco-xyz-banco-api:s8
+    restart: unless-stopped
+    mem_limit: 512m
+    ports:
+      - "127.0.0.1:8100:8100"
+    environment:
+      SERVER_ADDRESS: "0.0.0.0"
+      JAVA_TOOL_OPTIONS: "-Xms48m -Xmx192m -XX:MaxMetaspaceSize=224m"
+      SERVICE_HOST: "banco-api"
+      CONFIG_SERVER_URL: "http://config-server:8888"
+      INFRA_SECRET: "${INFRA_SECRET:?Falta INFRA_SECRET}"
+      EUREKA_URL: "http://infra:${INFRA_SECRET}@discovery-server:8761/eureka/"
+      AUTH_ISSUER: "${AUTH_ISSUER:-http://localhost:9000}"
+      AUTH_JWK_SET_URI: "http://auth-server:9000/oauth2/jwks"
+      JMS_BROKER_URL: "tcp://broker:61616"
+      JMS_PASSWORD: "${JMS_PASSWORD:?Falta JMS_PASSWORD}"
+    healthcheck:
+      test: ["CMD", "curl", "-fkSs", "--max-time", "3", "http://localhost:8100/actuator/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 18
+      start_period: 90s
+    depends_on:
+      config-server:
+        condition: service_healthy
+      discovery-server:
+        condition: service_healthy
+      auth-server:
+        condition: service_healthy
+      broker:
+        condition: service_healthy
+  bff-web:
+    build: ./bff-web
+    image: banco-xyz-bff-web:s8
+    restart: unless-stopped
+    mem_limit: 512m
+    ports:
+      - "127.0.0.1:8101:8101"
+    environment:
+      SERVER_ADDRESS: "0.0.0.0"
+      JAVA_TOOL_OPTIONS: "-Xms48m -Xmx192m -XX:MaxMetaspaceSize=224m"
+      SERVICE_HOST: "bff-web"
+      CONFIG_SERVER_URL: "http://config-server:8888"
+      INFRA_SECRET: "${INFRA_SECRET:?Falta INFRA_SECRET}"
+      EUREKA_URL: "http://infra:${INFRA_SECRET}@discovery-server:8761/eureka/"
+      AUTH_ISSUER: "${AUTH_ISSUER:-http://localhost:9000}"
+      AUTH_JWK_SET_URI: "http://auth-server:9000/oauth2/jwks"
+    healthcheck:
+      test: ["CMD", "curl", "-fkSs", "--max-time", "3", "https://localhost:8101/actuator/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 18
+      start_period: 90s
+    depends_on:
+      config-server:
+        condition: service_healthy
+      discovery-server:
+        condition: service_healthy
+      auth-server:
+        condition: service_healthy
+      banco-api:
+        condition: service_healthy
+  bff-movil:
+    build: ./bff-movil
+    image: banco-xyz-bff-movil:s8
+    restart: unless-stopped
+    mem_limit: 512m
+    ports:
+      - "127.0.0.1:8102:8102"
+    environment:
+      SERVER_ADDRESS: "0.0.0.0"
+      JAVA_TOOL_OPTIONS: "-Xms48m -Xmx192m -XX:MaxMetaspaceSize=224m"
+      SERVICE_HOST: "bff-movil"
+      CONFIG_SERVER_URL: "http://config-server:8888"
+      INFRA_SECRET: "${INFRA_SECRET:?Falta INFRA_SECRET}"
+      EUREKA_URL: "http://infra:${INFRA_SECRET}@discovery-server:8761/eureka/"
+      AUTH_ISSUER: "${AUTH_ISSUER:-http://localhost:9000}"
+      AUTH_JWK_SET_URI: "http://auth-server:9000/oauth2/jwks"
+    healthcheck:
+      test: ["CMD", "curl", "-fkSs", "--max-time", "3", "https://localhost:8102/actuator/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 18
+      start_period: 90s
+    depends_on:
+      config-server:
+        condition: service_healthy
+      discovery-server:
+        condition: service_healthy
+      auth-server:
+        condition: service_healthy
+      banco-api:
+        condition: service_healthy
+  bff-cajeros:
+    build: ./bff-cajeros
+    image: banco-xyz-bff-cajeros:s8
+    restart: unless-stopped
+    mem_limit: 512m
+    ports:
+      - "127.0.0.1:8103:8103"
+    environment:
+      SERVER_ADDRESS: "0.0.0.0"
+      JAVA_TOOL_OPTIONS: "-Xms48m -Xmx192m -XX:MaxMetaspaceSize=224m"
+      SERVICE_HOST: "bff-cajeros"
+      CONFIG_SERVER_URL: "http://config-server:8888"
+      INFRA_SECRET: "${INFRA_SECRET:?Falta INFRA_SECRET}"
+      EUREKA_URL: "http://infra:${INFRA_SECRET}@discovery-server:8761/eureka/"
+      AUTH_ISSUER: "${AUTH_ISSUER:-http://localhost:9000}"
+      AUTH_JWK_SET_URI: "http://auth-server:9000/oauth2/jwks"
+    healthcheck:
+      test: ["CMD", "curl", "-fkSs", "--max-time", "3", "https://localhost:8103/actuator/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 18
+      start_period: 90s
+    depends_on:
+      config-server:
+        condition: service_healthy
+      discovery-server:
+        condition: service_healthy
+      auth-server:
+        condition: service_healthy
+      banco-api:
+        condition: service_healthy
+  auditoria-service:
+    build: ./auditoria-service
+    image: banco-xyz-auditoria-service:s8
+    restart: unless-stopped
+    mem_limit: 512m
+    ports:
+      - "127.0.0.1:8104:8104"
+    environment:
+      SERVER_ADDRESS: "0.0.0.0"
+      JAVA_TOOL_OPTIONS: "-Xms48m -Xmx192m -XX:MaxMetaspaceSize=224m"
+      SERVICE_HOST: "auditoria-service"
+      CONFIG_SERVER_URL: "http://config-server:8888"
+      INFRA_SECRET: "${INFRA_SECRET:?Falta INFRA_SECRET}"
+      EUREKA_URL: "http://infra:${INFRA_SECRET}@discovery-server:8761/eureka/"
+      AUTH_ISSUER: "${AUTH_ISSUER:-http://localhost:9000}"
+      AUTH_JWK_SET_URI: "http://auth-server:9000/oauth2/jwks"
+      JMS_BROKER_URL: "tcp://broker:61616"
+      JMS_PASSWORD: "${JMS_PASSWORD:?Falta JMS_PASSWORD}"
+      AUDIT_DB_PATH: "/data/auditoria"
+    healthcheck:
+      test: ["CMD", "curl", "-fkSs", "--max-time", "3", "http://localhost:8104/actuator/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 18
+      start_period: 90s
+    depends_on:
+      config-server:
+        condition: service_healthy
+      discovery-server:
+        condition: service_healthy
+      auth-server:
+        condition: service_healthy
+      broker:
+        condition: service_healthy
+    volumes:
+      - auditoria-data:/data
+  broker:
+    image: apache/activemq-artemis:2.40.0
+    restart: unless-stopped
+    mem_limit: 768m
+    ports:
+      - "127.0.0.1:8161:8161"
+    environment:
+      ARTEMIS_USER: "banco"
+      ARTEMIS_PASSWORD: "${JMS_PASSWORD:?Falta JMS_PASSWORD}"
+      ANONYMOUS_LOGIN: "false"
+      JAVA_ARGS_APPEND: "-Xms128m -Xmx256m -XX:MaxMetaspaceSize=192m"
+    volumes:
+      - broker-data:/var/lib/artemis-instance
+    healthcheck:
+      test: ["CMD", "bash", "-c", "exec 3<>/dev/tcp/127.0.0.1/61616"]
+      interval: 10s
+      timeout: 5s
+      retries: 18
+      start_period: 60s
+volumes:
+  broker-data:
+  auditoria-data:

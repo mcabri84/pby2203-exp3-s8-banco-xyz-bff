@@ -1,0 +1,102 @@
+[
+  {
+    "prueba": "Config Server exige autenticacion",
+    "ok": true,
+    "detalle": "HTTP 401"
+  },
+  {
+    "prueba": "Config Server publica configuracion de resiliencia",
+    "ok": true,
+    "detalle": ""
+  },
+  {
+    "prueba": "Eureka registra la API y los tres BFF",
+    "ok": true,
+    "detalle": "BANCO-API, BFF-CAJEROS, BFF-MOVIL, BFF-WEB"
+  },
+  {
+    "prueba": "web consulta API mediante Eureka",
+    "ok": true,
+    "detalle": "HTTP 200"
+  },
+  {
+    "prueba": "web consume configuracion central",
+    "ok": true,
+    "detalle": ""
+  },
+  {
+    "prueba": "movil consulta API mediante Eureka",
+    "ok": true,
+    "detalle": "HTTP 200"
+  },
+  {
+    "prueba": "movil consume configuracion central",
+    "ok": true,
+    "detalle": ""
+  },
+  {
+    "prueba": "cajeros consulta API mediante Eureka",
+    "ok": true,
+    "detalle": "HTTP 200"
+  },
+  {
+    "prueba": "cajeros consume configuracion central",
+    "ok": true,
+    "detalle": ""
+  },
+  {
+    "prueba": "web responde con fallback durante la caida",
+    "ok": true,
+    "detalle": "HTTP 503; sin datos bancarios inventados"
+  },
+  {
+    "prueba": "web abre el Circuit Breaker",
+    "ok": true,
+    "detalle": "OPEN; ultima respuesta 0.056 s"
+  },
+  {
+    "prueba": "movil responde con fallback durante la caida",
+    "ok": true,
+    "detalle": "HTTP 503; sin datos bancarios inventados"
+  },
+  {
+    "prueba": "movil abre el Circuit Breaker",
+    "ok": true,
+    "detalle": "OPEN; ultima respuesta 0.0337 s"
+  },
+  {
+    "prueba": "cajeros responde con fallback durante la caida",
+    "ok": true,
+    "detalle": "HTTP 503; sin datos bancarios inventados"
+  },
+  {
+    "prueba": "cajeros abre el Circuit Breaker",
+    "ok": true,
+    "detalle": "OPEN; ultima respuesta 0.0435 s"
+  },
+  {
+    "prueba": "web recupera datos y cierra el circuito",
+    "ok": true,
+    "detalle": "HTTP 200; CLOSED"
+  },
+  {
+    "prueba": "movil recupera datos y cierra el circuito",
+    "ok": true,
+    "detalle": "HTTP 200; CLOSED"
+  },
+  {
+    "prueba": "cajeros recupera datos y cierra el circuito",
+    "ok": true,
+    "detalle": "HTTP 200; CLOSED"
+  },
+  {
+    "prueba": "OAuth2 sigue protegiendo WEB",
+    "ok": true,
+    "detalle": "HTTP 401"
+  },
+  {
+    "prueba": "Se conserva el aislamiento entre canales",
+    "ok": true,
+    "detalle": "HTTP 403"
+  }
+]

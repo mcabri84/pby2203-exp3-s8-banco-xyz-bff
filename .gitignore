@@ -1,0 +1,16 @@
+target/
+*/target/
+.idea/
+.vscode/
+*.iml
+.DS_Store
+
+.env
+.runtime/
+.paso3_oauth2.json
+*.pid
+
+.paso4_cloud.json
+
+.paso5_docker_jms.json
+datos/

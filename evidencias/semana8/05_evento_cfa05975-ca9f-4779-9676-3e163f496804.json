@@ -1,0 +1,14 @@
+{
+  "publicacion": {
+    "eventoId": "cfa05975-ca9f-4779-9676-3e163f496804",
+    "estado": "EN_COLA",
+    "transaccionId": "1"
+  },
+  "procesamiento": {
+    "eventoId": "cfa05975-ca9f-4779-9676-3e163f496804",
+    "tipoEvento": "TRANSACCION_PUBLICADA",
+    "transaccionId": "1",
+    "contenido": "{\"emitidoEn\":\"2026-10-04T23:07:03.873370665Z\",\"tipoEvento\":\"TRANSACCION_PUBLICADA\",\"eventoId\":\"cfa05975-ca9f-4779-9676-3e163f496804\",\"transaccion\":{\"id\":\"1\",\"fecha\":\"2024-06-30\",\"monto\":\"3000\",\"tipo\":\"credito\"}}",
+    "procesadoEn": "2026-10-04T23:07:04.593952693Z"
+  }
+}

@@ -1,0 +1,127 @@
+[
+  {
+    "prueba": "Nueve contenedores activos y saludables",
+    "ok": true,
+    "detalle": ""
+  },
+  {
+    "prueba": "Ocho imagenes de microservicios",
+    "ok": true,
+    "detalle": ""
+  },
+  {
+    "prueba": "OAuth2 emite JWT en Docker para web",
+    "ok": true,
+    "detalle": ""
+  },
+  {
+    "prueba": "OAuth2 emite JWT en Docker para movil",
+    "ok": true,
+    "detalle": ""
+  },
+  {
+    "prueba": "OAuth2 emite JWT en Docker para cajeros",
+    "ok": true,
+    "detalle": ""
+  },
+  {
+    "prueba": "BFF web obtiene datos desde contenedores",
+    "ok": true,
+    "detalle": ""
+  },
+  {
+    "prueba": "BFF movil obtiene datos desde contenedores",
+    "ok": true,
+    "detalle": ""
+  },
+  {
+    "prueba": "BFF cajeros obtiene datos desde contenedores",
+    "ok": true,
+    "detalle": ""
+  },
+  {
+    "prueba": "Configuracion central en Docker",
+    "ok": true,
+    "detalle": ""
+  },
+  {
+    "prueba": "Eureka incluye el consumidor de eventos",
+    "ok": true,
+    "detalle": "AUDITORIA-SERVICE, BANCO-API, BFF-CAJEROS, BFF-MOVIL, BFF-WEB"
+  },
+  {
+    "prueba": "Auditoria protegida sin token",
+    "ok": true,
+    "detalle": "HTTP 401"
+  },
+  {
+    "prueba": "Publicacion protegida sin token",
+    "ok": true,
+    "detalle": "HTTP 401"
+  },
+  {
+    "prueba": "Publicacion exige permiso transacciones.write",
+    "ok": true,
+    "detalle": "HTTP 403"
+  },
+  {
+    "prueba": "Publicacion asincrona de transaccion 1",
+    "ok": true,
+    "detalle": "HTTP 202"
+  },
+  {
+    "prueba": "Consumidor procesa evento cfa05975-ca9f-4779-9676-3e163f496804",
+    "ok": true,
+    "detalle": "HTTP 200"
+  },
+  {
+    "prueba": "Evento conserva datos de la transaccion original",
+    "ok": true,
+    "detalle": ""
+  },
+  {
+    "prueba": "Publicacion asincrona de transaccion 2",
+    "ok": true,
+    "detalle": "HTTP 202"
+  },
+  {
+    "prueba": "API acepta eventos con consumidor detenido",
+    "ok": true,
+    "detalle": ""
+  },
+  {
+    "prueba": "Consumidor procesa evento b9b345aa-e0ca-4540-bfdf-d066f8e59120",
+    "ok": true,
+    "detalle": "HTTP 200"
+  },
+  {
+    "prueba": "Auditoria conserva eventos al reiniciar",
+    "ok": true,
+    "detalle": ""
+  },
+  {
+    "prueba": "Fallback WEB en Docker",
+    "ok": true,
+    "detalle": ""
+  },
+  {
+    "prueba": "Circuito WEB OPEN en Docker",
+    "ok": true,
+    "detalle": ""
+  },
+  {
+    "prueba": "WEB recupera datos y circuito CLOSED en Docker",
+    "ok": true,
+    "detalle": ""
+  },
+  {
+    "prueba": "OAuth2 se mantiene tras recuperar API",
+    "ok": true,
+    "detalle": ""
+  },
+  {
+    "prueba": "Estado final: nueve servicios saludables",
+    "ok": true,
+    "detalle": ""
+  }
+]

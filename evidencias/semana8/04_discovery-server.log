@@ -1,0 +1,151 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::               (v3.5.16)
+
+2026-10-04T19:43:02.890-03:00  INFO 267682 --- [discovery-server] [           main] c.d.b.d.DiscoveryServerApplication       : Starting DiscoveryServerApplication v1.0.0-SNAPSHOT using Java 17.0.20.1 with PID 267682 (/home/mcabri/Escritorio/PBY2203/Exp3_S8/banco-xyz-bff/discovery-server/target/discovery-server-1.0.0-SNAPSHOT.jar started by mcabri in /home/mcabri/Escritorio/PBY2203/Exp3_S8/banco-xyz-bff)
+2026-10-04T19:43:02.943-03:00  INFO 267682 --- [discovery-server] [           main] c.d.b.d.DiscoveryServerApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-10-04T19:43:13.852-03:00  INFO 267682 --- [discovery-server] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e35c1510-b555-3337-8e92-fa4b57b229e9
+2026-10-04T19:43:16.506-03:00  INFO 267682 --- [discovery-server] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8761 (http)
+2026-10-04T19:43:16.596-03:00  INFO 267682 --- [discovery-server] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-10-04T19:43:16.597-03:00  INFO 267682 --- [discovery-server] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-10-04T19:43:16.871-03:00  INFO 267682 --- [discovery-server] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-10-04T19:43:16.878-03:00  INFO 267682 --- [discovery-server] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 13168 ms
+2026-10-04T19:43:21.256-03:00  INFO 267682 --- [discovery-server] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2026-10-04T19:43:21.259-03:00  INFO 267682 --- [discovery-server] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2026-10-04T19:43:22.072-03:00  INFO 267682 --- [discovery-server] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2026-10-04T19:43:22.073-03:00  INFO 267682 --- [discovery-server] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2026-10-04T19:43:22.499-03:00  INFO 267682 --- [discovery-server] [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-10-04T19:43:23.234-03:00  INFO 267682 --- [discovery-server] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2026-10-04T19:43:24.540-03:00  WARN 267682 --- [discovery-server] [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-10-04T19:43:24.573-03:00  INFO 267682 --- [discovery-server] [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-10-04T19:43:24.613-03:00  INFO 267682 --- [discovery-server] [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-10-04T19:43:24.613-03:00  INFO 267682 --- [discovery-server] [           main] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
+2026-10-04T19:43:24.616-03:00  INFO 267682 --- [discovery-server] [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1791153804616 with initial instances count: 0
+2026-10-04T19:43:24.685-03:00  INFO 267682 --- [discovery-server] [           main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2026-10-04T19:43:24.687-03:00  INFO 267682 --- [discovery-server] [           main] c.n.eureka.cluster.PeerEurekaNodes       : Adding new peer nodes [http://localhost:8761/eureka/]
+2026-10-04T19:43:24.952-03:00  INFO 267682 --- [discovery-server] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2026-10-04T19:43:24.953-03:00  INFO 267682 --- [discovery-server] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2026-10-04T19:43:24.953-03:00  INFO 267682 --- [discovery-server] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2026-10-04T19:43:24.953-03:00  INFO 267682 --- [discovery-server] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2026-10-04T19:43:25.015-03:00  INFO 267682 --- [discovery-server] [           main] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://localhost:8761/eureka/
+2026-10-04T19:43:25.032-03:00  INFO 267682 --- [discovery-server] [           main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2026-10-04T19:43:25.032-03:00  INFO 267682 --- [discovery-server] [           main] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2026-10-04T19:43:25.149-03:00  INFO 267682 --- [discovery-server] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application DISCOVERY-SERVER with eureka with status UP
+2026-10-04T19:43:25.176-03:00  INFO 267682 --- [discovery-server] [       Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2026-10-04T19:43:25.178-03:00  INFO 267682 --- [discovery-server] [       Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2026-10-04T19:43:25.178-03:00  INFO 267682 --- [discovery-server] [       Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+2026-10-04T19:43:25.179-03:00  INFO 267682 --- [discovery-server] [       Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+2026-10-04T19:43:25.179-03:00  INFO 267682 --- [discovery-server] [       Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2026-10-04T19:43:25.186-03:00  INFO 267682 --- [discovery-server] [       Thread-9] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2026-10-04T19:43:25.191-03:00  INFO 267682 --- [discovery-server] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8761 (http) with context path '/'
+2026-10-04T19:43:25.193-03:00  INFO 267682 --- [discovery-server] [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8761
+2026-10-04T19:43:25.266-03:00  INFO 267682 --- [discovery-server] [           main] c.d.b.d.DiscoveryServerApplication       : Started DiscoveryServerApplication in 28.319 seconds (process running for 32.134)
+2026-10-04T19:43:26.253-03:00  INFO 267682 --- [discovery-server] [0.1-8761-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-04T19:43:26.253-03:00  INFO 267682 --- [discovery-server] [0.1-8761-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-10-04T19:43:26.257-03:00  INFO 267682 --- [discovery-server] [0.1-8761-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2026-10-04T19:43:30.181-03:00  INFO 267682 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-10-04T19:43:35.181-03:00  INFO 267682 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-10-04T19:43:40.184-03:00  INFO 267682 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2026-10-04T19:43:45.184-03:00  INFO 267682 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-10-04T19:43:50.184-03:00  INFO 267682 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-10-04T19:43:55.186-03:00  INFO 267682 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2026-10-04T19:44:00.186-03:00  INFO 267682 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-10-04T19:44:05.190-03:00  INFO 267682 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-10-04T19:44:10.192-03:00  INFO 267682 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2026-10-04T19:44:10.911-03:00  INFO 267682 --- [discovery-server] [0.1-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance BANCO-API/banco-api:8100 with status UP (replication=false)
+2026-10-04T19:44:10.913-03:00  INFO 267682 --- [discovery-server] [0.1-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance BFF-MOVIL/bff-movil:8102 with status UP (replication=false)
+2026-10-04T19:44:12.845-03:00  INFO 267682 --- [discovery-server] [0.1-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance BFF-WEB/bff-web:8101 with status UP (replication=false)
+2026-10-04T19:44:12.906-03:00 ERROR 267682 --- [discovery-server] [get_localhost-3] c.n.e.cluster.ReplicationTaskProcessor   : Batch update failure with HTTP status code 401; discarding 2 replication tasks
+2026-10-04T19:44:12.908-03:00  WARN 267682 --- [discovery-server] [get_localhost-3] c.n.eureka.util.batcher.TaskExecutors    : Discarding 2 tasks of TaskBatchingWorker-target_localhost-3 due to permanent error
+2026-10-04T19:44:13.412-03:00 ERROR 267682 --- [discovery-server] [get_localhost-3] c.n.e.cluster.ReplicationTaskProcessor   : Batch update failure with HTTP status code 401; discarding 1 replication tasks
+2026-10-04T19:44:13.415-03:00  WARN 267682 --- [discovery-server] [get_localhost-3] c.n.eureka.util.batcher.TaskExecutors    : Discarding 1 tasks of TaskBatchingWorker-target_localhost-3 due to permanent error
+2026-10-04T19:44:15.194-03:00  INFO 267682 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2026-10-04T19:44:15.254-03:00 ERROR 267682 --- [discovery-server] [get_localhost-3] c.n.e.cluster.ReplicationTaskProcessor   : Batch update failure with HTTP status code 401; discarding 2 replication tasks
+2026-10-04T19:44:15.255-03:00  WARN 267682 --- [discovery-server] [get_localhost-3] c.n.eureka.util.batcher.TaskExecutors    : Discarding 2 tasks of TaskBatchingWorker-target_localhost-3 due to permanent error
+2026-10-04T19:44:15.644-03:00  INFO 267682 --- [discovery-server] [0.1-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance BFF-CAJEROS/bff-cajeros:8103 with status UP (replication=false)
+2026-10-04T19:44:16.248-03:00 ERROR 267682 --- [discovery-server] [get_localhost-3] c.n.e.cluster.ReplicationTaskProcessor   : Batch update failure with HTTP status code 401; discarding 1 replication tasks
+2026-10-04T19:44:16.248-03:00  WARN 267682 --- [discovery-server] [get_localhost-3] c.n.eureka.util.batcher.TaskExecutors    : Discarding 1 tasks of TaskBatchingWorker-target_localhost-3 due to permanent error
+2026-10-04T19:44:17.845-03:00 ERROR 267682 --- [discovery-server] [et_localhost-18] c.n.e.cluster.ReplicationTaskProcessor   : Batch update failure with HTTP status code 401; discarding 1 replication tasks
+2026-10-04T19:44:17.845-03:00  WARN 267682 --- [discovery-server] [et_localhost-18] c.n.eureka.util.batcher.TaskExecutors    : Discarding 1 tasks of TaskBatchingWorker-target_localhost-18 due to permanent error
+2026-10-04T19:44:20.194-03:00  INFO 267682 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-10-04T19:44:20.413-03:00 ERROR 267682 --- [discovery-server] [et_localhost-18] c.n.e.cluster.ReplicationTaskProcessor   : Batch update failure with HTTP status code 401; discarding 3 replication tasks
+2026-10-04T19:44:20.414-03:00  WARN 267682 --- [discovery-server] [et_localhost-18] c.n.eureka.util.batcher.TaskExecutors    : Discarding 3 tasks of TaskBatchingWorker-target_localhost-18 due to permanent error
+2026-10-04T19:44:23.041-03:00  INFO 267682 --- [discovery-server] [0.1-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance BANCO-API/banco-api:8100 with status DOWN (replication=false)
+2026-10-04T19:44:23.046-03:00 ERROR 267682 --- [discovery-server] [get_localhost-4] c.n.e.cluster.ReplicationTaskProcessor   : Batch update failure with HTTP status code 401; discarding 1 replication tasks
+2026-10-04T19:44:23.047-03:00  WARN 267682 --- [discovery-server] [get_localhost-4] c.n.eureka.util.batcher.TaskExecutors    : Discarding 1 tasks of TaskBatchingWorker-target_localhost-4 due to permanent error
+2026-10-04T19:44:23.224-03:00  INFO 267682 --- [discovery-server] [0.1-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance BANCO-API/banco-api:8100 (replication=false)
+2026-10-04T19:44:23.573-03:00 ERROR 267682 --- [discovery-server] [et_localhost-16] c.n.e.cluster.ReplicationTaskProcessor   : Batch update failure with HTTP status code 401; discarding 2 replication tasks
+2026-10-04T19:44:23.574-03:00  WARN 267682 --- [discovery-server] [et_localhost-16] c.n.eureka.util.batcher.TaskExecutors    : Discarding 2 tasks of TaskBatchingWorker-target_localhost-16 due to permanent error
+2026-10-04T19:44:25.194-03:00  INFO 267682 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-10-04T19:44:25.640-03:00 ERROR 267682 --- [discovery-server] [et_localhost-17] c.n.e.cluster.ReplicationTaskProcessor   : Batch update failure with HTTP status code 401; discarding 2 replication tasks
+2026-10-04T19:44:25.640-03:00  WARN 267682 --- [discovery-server] [et_localhost-17] c.n.eureka.util.batcher.TaskExecutors    : Discarding 2 tasks of TaskBatchingWorker-target_localhost-17 due to permanent error
+2026-10-04T19:44:28.337-03:00 ERROR 267682 --- [discovery-server] [et_localhost-18] c.n.e.cluster.ReplicationTaskProcessor   : Batch update failure with HTTP status code 401; discarding 1 replication tasks
+2026-10-04T19:44:28.337-03:00  WARN 267682 --- [discovery-server] [et_localhost-18] c.n.eureka.util.batcher.TaskExecutors    : Discarding 1 tasks of TaskBatchingWorker-target_localhost-18 due to permanent error
+2026-10-04T19:44:30.194-03:00  INFO 267682 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-10-04T19:44:30.786-03:00 ERROR 267682 --- [discovery-server] [et_localhost-15] c.n.e.cluster.ReplicationTaskProcessor   : Batch update failure with HTTP status code 401; discarding 2 replication tasks
+2026-10-04T19:44:30.786-03:00  WARN 267682 --- [discovery-server] [et_localhost-15] c.n.eureka.util.batcher.TaskExecutors    : Discarding 2 tasks of TaskBatchingWorker-target_localhost-15 due to permanent error
+2026-10-04T19:44:33.516-03:00 ERROR 267682 --- [discovery-server] [et_localhost-16] c.n.e.cluster.ReplicationTaskProcessor   : Batch update failure with HTTP status code 401; discarding 1 replication tasks
+2026-10-04T19:44:33.518-03:00  WARN 267682 --- [discovery-server] [et_localhost-16] c.n.eureka.util.batcher.TaskExecutors    : Discarding 1 tasks of TaskBatchingWorker-target_localhost-16 due to permanent error
+2026-10-04T19:44:35.194-03:00  INFO 267682 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-10-04T19:44:35.954-03:00 ERROR 267682 --- [discovery-server] [get_localhost-8] c.n.e.cluster.ReplicationTaskProcessor   : Batch update failure with HTTP status code 401; discarding 2 replication tasks
+2026-10-04T19:44:35.954-03:00  WARN 267682 --- [discovery-server] [get_localhost-8] c.n.eureka.util.batcher.TaskExecutors    : Discarding 2 tasks of TaskBatchingWorker-target_localhost-8 due to permanent error
+2026-10-04T19:44:36.414-03:00  INFO 267682 --- [discovery-server] [0.1-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance BANCO-API/banco-api:8100 with status UP (replication=false)
+2026-10-04T19:44:36.949-03:00 ERROR 267682 --- [discovery-server] [get_localhost-8] c.n.e.cluster.ReplicationTaskProcessor   : Batch update failure with HTTP status code 401; discarding 1 replication tasks
+2026-10-04T19:44:36.950-03:00  WARN 267682 --- [discovery-server] [get_localhost-8] c.n.eureka.util.batcher.TaskExecutors    : Discarding 1 tasks of TaskBatchingWorker-target_localhost-8 due to permanent error
+2026-10-04T19:44:38.651-03:00 ERROR 267682 --- [discovery-server] [et_localhost-17] c.n.e.cluster.ReplicationTaskProcessor   : Batch update failure with HTTP status code 401; discarding 1 replication tasks
+2026-10-04T19:44:38.651-03:00  WARN 267682 --- [discovery-server] [et_localhost-17] c.n.eureka.util.batcher.TaskExecutors    : Discarding 1 tasks of TaskBatchingWorker-target_localhost-17 due to permanent error
+2026-10-04T19:44:40.194-03:00  INFO 267682 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-10-04T19:44:41.085-03:00 ERROR 267682 --- [discovery-server] [get_localhost-3] c.n.e.cluster.ReplicationTaskProcessor   : Batch update failure with HTTP status code 401; discarding 2 replication tasks
+2026-10-04T19:44:41.086-03:00  WARN 267682 --- [discovery-server] [get_localhost-3] c.n.eureka.util.batcher.TaskExecutors    : Discarding 2 tasks of TaskBatchingWorker-target_localhost-3 due to permanent error
+2026-10-04T19:44:41.822-03:00 ERROR 267682 --- [discovery-server] [get_localhost-8] c.n.e.cluster.ReplicationTaskProcessor   : Batch update failure with HTTP status code 401; discarding 1 replication tasks
+2026-10-04T19:44:41.822-03:00  WARN 267682 --- [discovery-server] [get_localhost-8] c.n.eureka.util.batcher.TaskExecutors    : Discarding 1 tasks of TaskBatchingWorker-target_localhost-8 due to permanent error
+2026-10-04T19:44:43.781-03:00 ERROR 267682 --- [discovery-server] [et_localhost-15] c.n.e.cluster.ReplicationTaskProcessor   : Batch update failure with HTTP status code 401; discarding 1 replication tasks
+2026-10-04T19:44:43.781-03:00  WARN 267682 --- [discovery-server] [et_localhost-15] c.n.eureka.util.batcher.TaskExecutors    : Discarding 1 tasks of TaskBatchingWorker-target_localhost-15 due to permanent error
+2026-10-04T19:44:45.194-03:00  INFO 267682 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-10-04T19:44:46.238-03:00 ERROR 267682 --- [discovery-server] [et_localhost-18] c.n.e.cluster.ReplicationTaskProcessor   : Batch update failure with HTTP status code 401; discarding 2 replication tasks
+2026-10-04T19:44:46.238-03:00  WARN 267682 --- [discovery-server] [et_localhost-18] c.n.eureka.util.batcher.TaskExecutors    : Discarding 2 tasks of TaskBatchingWorker-target_localhost-18 due to permanent error
+2026-10-04T19:44:46.986-03:00 ERROR 267682 --- [discovery-server] [get_localhost-2] c.n.e.cluster.ReplicationTaskProcessor   : Batch update failure with HTTP status code 401; discarding 1 replication tasks
+2026-10-04T19:44:46.986-03:00  WARN 267682 --- [discovery-server] [get_localhost-2] c.n.eureka.util.batcher.TaskExecutors    : Discarding 1 tasks of TaskBatchingWorker-target_localhost-2 due to permanent error
+2026-10-04T19:44:48.916-03:00 ERROR 267682 --- [discovery-server] [get_localhost-2] c.n.e.cluster.ReplicationTaskProcessor   : Batch update failure with HTTP status code 401; discarding 1 replication tasks
+2026-10-04T19:44:48.916-03:00  WARN 267682 --- [discovery-server] [get_localhost-2] c.n.eureka.util.batcher.TaskExecutors    : Discarding 1 tasks of TaskBatchingWorker-target_localhost-2 due to permanent error
+2026-10-04T19:44:50.195-03:00  INFO 267682 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-10-04T19:44:51.389-03:00 ERROR 267682 --- [discovery-server] [et_localhost-16] c.n.e.cluster.ReplicationTaskProcessor   : Batch update failure with HTTP status code 401; discarding 2 replication tasks
+2026-10-04T19:44:51.389-03:00  WARN 267682 --- [discovery-server] [et_localhost-16] c.n.eureka.util.batcher.TaskExecutors    : Discarding 2 tasks of TaskBatchingWorker-target_localhost-16 due to permanent error
+2026-10-04T19:44:52.143-03:00 ERROR 267682 --- [discovery-server] [et_localhost-18] c.n.e.cluster.ReplicationTaskProcessor   : Batch update failure with HTTP status code 401; discarding 1 replication tasks
+2026-10-04T19:44:52.143-03:00  WARN 267682 --- [discovery-server] [et_localhost-18] c.n.eureka.util.batcher.TaskExecutors    : Discarding 1 tasks of TaskBatchingWorker-target_localhost-18 due to permanent error
+2026-10-04T19:44:52.569-03:00  INFO 267682 --- [discovery-server] [ionShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application DISCOVERY-SERVER with eureka with status DOWN
+2026-10-04T19:44:52.613-03:00  INFO 267682 --- [discovery-server] [ionShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-10-04T19:44:53.189-03:00  INFO 267682 --- [discovery-server] [0.1-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance BFF-MOVIL/bff-movil:8102 with status DOWN (replication=false)
+2026-10-04T19:44:53.235-03:00  INFO 267682 --- [discovery-server] [0.1-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance BANCO-API/banco-api:8100 with status DOWN (replication=false)
+2026-10-04T19:44:53.261-03:00  INFO 267682 --- [discovery-server] [0.1-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance BFF-CAJEROS/bff-cajeros:8103 with status DOWN (replication=false)
+2026-10-04T19:44:53.374-03:00  INFO 267682 --- [discovery-server] [0.1-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance BFF-WEB/bff-web:8101 with status DOWN (replication=false)
+2026-10-04T19:44:53.432-03:00  INFO 267682 --- [discovery-server] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-10-04T19:44:53.448-03:00  INFO 267682 --- [discovery-server] [ionShutdownHook] o.s.c.n.e.server.EurekaServerBootstrap   : Shutting down Eureka Server..
+2026-10-04T19:44:53.453-03:00  INFO 267682 --- [discovery-server] [ionShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2026-10-04T19:44:53.498-03:00  INFO 267682 --- [discovery-server] [ionShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2026-10-04T19:44:53.498-03:00  INFO 267682 --- [discovery-server] [ionShutdownHook] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka Service is now shutdown...
+2026-10-04T19:44:53.502-03:00  INFO 267682 --- [discovery-server] [ionShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2026-10-04T19:44:53.505-03:00  INFO 267682 --- [discovery-server] [ionShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2026-10-04T19:44:53.473-03:00 ERROR 267682 --- [discovery-server] [t-Conn-Cleaner2] c.n.d.s.t.j.EurekaJersey3ClientImpl      : Cannot clean connections
+
+java.lang.IllegalStateException: Client instance has been closed.
+	at org.glassfish.jersey.internal.guava.Preconditions.checkState(Preconditions.java:169) ~[jersey-common-3.1.11.jar!/:na]
+	at org.glassfish.jersey.client.JerseyClient.checkNotClosed(JerseyClient.java:248) ~[jersey-client-3.1.11.jar!/:na]
+	at org.glassfish.jersey.client.JerseyClient.getConfiguration(JerseyClient.java:363) ~[jersey-client-3.1.11.jar!/:na]
+	at org.glassfish.jersey.client.JerseyClient.getConfiguration(JerseyClient.java:54) ~[jersey-client-3.1.11.jar!/:na]
+	at com.netflix.discovery.shared.transport.jersey3.EurekaJersey3ClientImpl$ConnectionCleanerTask.run(EurekaJersey3ClientImpl.java:338) ~[eureka-client-jersey3-2.0.6.jar!/:2.0.6]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2026-10-04T19:44:53.582-03:00  INFO 267682 --- [discovery-server] [ionShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2026-10-04T19:44:53.583-03:00  INFO 267682 --- [discovery-server] [ionShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient

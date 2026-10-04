@@ -1,0 +1,26 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::               (v3.5.16)
+
+2026-10-04T19:30:06.909-03:00  INFO 261688 --- [bff-web] [           main] c.duoc.bancoxyz.web.BffWebApplication    : Starting BffWebApplication v1.0.0-SNAPSHOT using Java 17.0.20.1 with PID 261688 (/home/mcabri/Escritorio/PBY2203/Exp3_S8/banco-xyz-bff/bff-web/target/bff-web-1.0.0-SNAPSHOT.jar started by mcabri in /home/mcabri/Escritorio/PBY2203/Exp3_S8/banco-xyz-bff)
+2026-10-04T19:30:06.968-03:00  INFO 261688 --- [bff-web] [           main] c.duoc.bancoxyz.web.BffWebApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-10-04T19:30:24.315-03:00  INFO 261688 --- [bff-web] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8101 (https)
+2026-10-04T19:30:24.576-03:00  INFO 261688 --- [bff-web] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-10-04T19:30:24.577-03:00  INFO 261688 --- [bff-web] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-10-04T19:30:24.997-03:00  INFO 261688 --- [bff-web] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-10-04T19:30:25.015-03:00  INFO 261688 --- [bff-web] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 16350 ms
+2026-10-04T19:30:31.863-03:00  INFO 261688 --- [bff-web] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2026-10-04T19:30:38.410-03:00  INFO 261688 --- [bff-web] [           main] o.a.t.util.net.NioEndpoint.certificate   : Connector [https-jsse-nio-127.0.0.1-8101], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [Set directly - location unknown] using alias [banco-bff] with trust store [null]
+2026-10-04T19:30:38.517-03:00  INFO 261688 --- [bff-web] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8101 (https) with context path '/'
+2026-10-04T19:30:38.650-03:00  INFO 261688 --- [bff-web] [           main] c.duoc.bancoxyz.web.BffWebApplication    : Started BffWebApplication in 36.512 seconds (process running for 40.345)
+2026-10-04T19:30:43.793-03:00  INFO 261688 --- [bff-web] [0.1-8101-exec-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-04T19:30:43.793-03:00  INFO 261688 --- [bff-web] [0.1-8101-exec-5] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-10-04T19:30:43.802-03:00  INFO 261688 --- [bff-web] [0.1-8101-exec-5] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2026-10-04T19:30:48.618-03:00  INFO 261688 --- [bff-web] [ionShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-10-04T19:30:48.636-03:00  INFO 261688 --- [bff-web] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
